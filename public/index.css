@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+}
+
+.start-page{
+    width: fit-content; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.start-page > button{
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 10px;
+    background-color: #2a1e78;
+    color: white;
+}
+
+.split{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.gutter {
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/* .sidebar{
+    
+} */
+
+.addNewButton{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+.addNewButton > button{
+    border: none;
+    outline: none;
+    background: #2a1e78;
+    padding: 7px;
+    color: white;
+}
+
+.eachNote{
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.eachNote > i{
+    color:white;
+}
+
+.eachNote > i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* editor */
+.editor-head, .react-mde.react-mde-tabbed-layout, .mde-textarea-wrapper{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.mde-text{
+    width: 100%;
+    height: 100% !important;
+    border: none;
+    padding: 10px;
+}
+
+.react-mde-tabbed-layout > div:last-child{
+    height: 100%;
+    overflow-y:hidden;
+}
+
+.mde-header{
+    padding: 10px;
+    background: #eee;
+}
+
+.mde-tabs > button{
+    border: none;
+    outline: none;
+    background: #2a1e78;
+    color: white;
+    padding: 7px;
+    margin-right: 7px;
+}
+
+ul{
+    list-style: none;
+}
+
+.mde-header{
+    display: flex;
+}
+
+.mde-header-group{
+    display: flex;
+}
+
+.mde-header-item > button{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.mde-header-item > button > svg{
+    width: 18px;
+    height: 18px;
+}
+
+.invisible, ul.mde-header-group.hidden{
+    display: none;
+}
+
+.mde-preview{
+    padding: 10px;
+}
+
+.selected-note{
+    background-color: #2a1e78;
+    color: white;
+}
