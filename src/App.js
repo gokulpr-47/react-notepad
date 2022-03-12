@@ -23,7 +23,7 @@ export default function App(){
 
     function findCurrentNote(){
         return note.find(item =>{
-            return item.id == currentNoteId
+            return item.id === currentNoteId
         }) || note[0]
     }
 
@@ -32,7 +32,7 @@ export default function App(){
             const newArray = []
             for(var i =0; i<oldNotes.length;i++){
                 const oldNote = oldNotes[i]
-                if(oldNote.id == currentNoteId){
+                if(oldNote.id === currentNoteId){
                     newArray.unshift({...oldNote, data: text})
                 }
                 else{
