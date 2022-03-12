@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar'
 
 export default function App(){
     const [note, setNote] = React.useState(() => JSON.parse(localStorage.getItem('note')) || [])
-    const [currentNoteId, setCurrentNoteId] = React.useState(note[0].id || '')
+    const [currentNoteId, setCurrentNoteId] = React.useState((note[0] && note[0].id) || '')
 
     React.useEffect(() => {
         localStorage.setItem('note',JSON.stringify(note))

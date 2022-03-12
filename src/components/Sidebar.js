@@ -7,7 +7,7 @@ export default function Sidebar(props){
             <div className={`eachNote ${items.id === props.currentNote? "selected-note": ""}`}
                 onClick={()=>props.setCurrentNoteId(items.id)} key={props.data.id}>
                 <p>{items.data.split("\n")[0]}</p>
-                <i class="fa-solid fa-trash-can" onClick={(event)=>props.deleteNote(event, items.id)}></i>
+                <i className="fa-solid fa-trash-can" onClick={(event)=>props.deleteNote(event, items.id)}></i>
             </div>
         )
     })

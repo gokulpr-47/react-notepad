@@ -11,7 +11,7 @@ export default function Sidebar(props){
       tasklists: true
   });
   const [selectedTab, setSelectedTab] = React.useState("write");
-    console.log(props.currentNote.data)
+    // console.log(props.currentNote.data)
     return(
         <div className="editor-header">
           <ReactMde
